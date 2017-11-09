@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <h1>Doses#new</h1>
+
+      <h2>Add a dose for <%= @cocktail.name %></h2>
+
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.input :ingredient, collection: @ingredients_array %>
+      <%= f.submit "Add a Dose", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+Get the id of the cocktail
+look at review
+
+make input form for doses.name
+add ingredient
+
+add to cocktail
+
+

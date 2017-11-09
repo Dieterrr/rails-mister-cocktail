@@ -1,0 +1,17 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Cocktails#index</h1>
+
+      <ul>
+
+        <% @cocktails.each do |cocktail| %>
+        <li> <%= cocktail.name %> <%= link_to "See details", cocktail_path(cocktail), class: "btn btn-primary"%></li>
+        <% end %>
+      </ul>
+
+    </div>
+  </div>
+</div>
