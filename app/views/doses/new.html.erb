@@ -9,7 +9,7 @@
 
       <%= simple_form_for [@cocktail, @dose] do |f| %>
       <%= f.input :description %>
-      <%= f.input :ingredient, collection: @ingredients_array %>
+      <%= f.association :ingredient, collection: @ingredients %>
       <%= f.submit "Add a Dose", class: "btn btn-primary" %>
       <% end %>
     </div>
@@ -21,12 +21,12 @@
 
 
 
-Get the id of the cocktail
+<!-- Get the id of the cocktail
 look at review
 
 make input form for doses.name
 add ingredient
 
-add to cocktail
+add to cocktail -->
 
 
