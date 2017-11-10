@@ -9,12 +9,11 @@
       <ul>
 
         <% @cocktail.doses.each do |dose| %>
-        <li><%= dose.description %> : <%= dose.ingredient.name %><%= link_to "Destroy", dose_path(dose),  method: :delete, class: "btn btn-danger"%></li>
+        <li><%= dose.description %> : <%= dose.ingredient.name %><%= link_to "Destroy", dose_path(dose),method: :delete, class: "btn btn-danger"%></li>
         <% end %>
       </ul>
-
       <%= link_to "Edit doses", new_cocktail_dose_path(@cocktail), class: "btn btn-primary"%>
-
+      <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
     </div>
   </div>
