@@ -12,6 +12,7 @@ gem 'simple_form'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "autoprefixer-rails"
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.6'
